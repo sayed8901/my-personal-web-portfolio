@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reg. form</title>
+
+    <link rel="stylesheet for form framework" href="Form styling.css">
+
+    <style>
+
+
+      div {
+        border-radius: 5px;
+        background-color: lightgray; /* For browsers that do not support gradients */
+        background-image: linear-gradient(95deg, lightgray, slategray);
+        /* background-image: radial-gradient(circle, white, gray); */
+        padding: 30px;
+        width: 60%;
+        margin-left: 15%;
+      }
+
+      div_left {
+        float: left;
+        text-align: left;
+        width: 40%;
+        margin-left: 5%;
+      }
+
+      div_right {
+        float: right;
+        align-items: center;
+        width: 25%;
+        margin-right: 5%;
+      }
+
+      select:invalid {
+        color: gray;
+      }
+      option {
+        color: black;
+      }
+
+      body {
+        background-image: url(images/Background_images/Background_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3 style="text-align: center">Registration Form</h3>
+
+    <div>
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="Sex">Gender</label>
+        <select required>
+          <option value="" disabled selected hidden>Choose Gender..</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="bangladesh">Bangladesh</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="india">India</option>
+        </select>
+
+        <br />
+        <br />
+        <label for="lname">You can add a note here...</label> <br />
+        <textarea
+          id="comments"
+          name="Registration_remarks"
+          placeholder="Write something.."
+          style="height: 100px; width: 100%"
+        >
+        </textarea>
+
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+
+      <div_left>
+        <h3>Already registered?</h3>
+
+        <p>Click to log in</p>
+        <a href="../3. log_in/Log_in form.html">Log in</a> |
+      </div_left>
+
+      <div_right>
+        <h4>Go back to the home page:</h4>
+        <a href="../../index.html">Home</a> |
+      </div_right>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+  </body>
+</html>

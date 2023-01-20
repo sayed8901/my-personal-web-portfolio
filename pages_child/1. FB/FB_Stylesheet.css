@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+header, footer {
+    text-align: center;
+}
+header {
+    height: 120px;
+}
+footer {
+    max-height: 200px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+main {
+    height: 60vh;
+    margin-left: 10%; margin-right: 10%;
+}
+article {
+    margin-top: 1%; 
+    margin-right: 10%;
+}
+article h1 {
+    color: rgb(7, 105, 243);
+    font-size:350%
+}
+aside {
+    max-width: 390px;
+    margin-left: auto; margin-right: auto;
+}
+  
+form {
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 15px 25px 15px;
+    box-shadow: 0.5px 3px 10px darkgray;
+}
+
+input[type="text"], input[type="submit_1"], select {
+    padding:15px;
+    width: 100%;
+    margin: 7px 0px;
+    border-radius: 5px;
+}
+input[type="text"], select {
+    border: 1px solid gainsboro;
+}
+
+input[type="submit_1"] {
+    background-color: rgb(10, 112, 255);
+    color: white;
+    font-size: large; font-weight: bold; text-align: center;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit_1"]:hover {
+    background-color: rgb(30, 123, 253);
+}
+
+input[type="submit_2"] {
+    width: 65%; 
+    background-color: rgb(38, 191, 38);
+    color: white;
+    font-size:medium; font-weight: bold; text-align: center;
+    padding: 15px;
+    margin: 1px 18%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit_2"]:hover {
+    background-color: rgb(46, 168, 46);
+}
+
+div_forgot_password {
+    color: rgb(7, 105, 243); text-align: center; font-size: small;
+}
+div_forgot_password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+div_creat_page {
+    color: black; text-align: center;
+}
+div_creat_page span {
+    font-weight: bold;
+}
+div_creat_page span:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 800px) {
+    header {
+        display: none;
+    }
+    article {
+        margin-top: 7%;
+        width: 400px; 
+        margin:auto;
+        text-align: center;
+    }
+    article p {
+        font-size: 135%;
+    }
+    aside {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 800px) {
+    main {
+        display: flex; 
+        flex-direction: row;
+        height: 50vh;
+    }
+    article p {
+        font-size: 135%;
+    }
+    aside {
+        min-width: 390px;
+    }
+    article {
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        display: flex; 
+        flex-direction: row;
+        width: 1000px;
+        margin: auto;
+    }
+    article p {
+        font-size:165%
+    }
+    article {
+        margin-right: 10%;
+    }
+}
+
+footer {
+    background-color: white;
+    height: 290px;
+    margin-top: 90px;
+}
+
+links {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+    padding: 5px;
+    color: gray; 
+    font-size:65%; line-height: 0.5;
+    text-decoration: none;
+}
+li:hover {
+    text-decoration: underline;
+}
